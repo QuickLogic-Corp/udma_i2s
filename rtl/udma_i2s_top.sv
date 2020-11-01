@@ -146,6 +146,25 @@ module udma_i2s_top
     logic                      s_sel_master_ext;
     logic                      s_sel_slave_num;
     logic                      s_sel_slave_ext;
+    
+    logic                      s_master_clk_en;
+    logic                      s_master_i2s_en;
+    logic                      s_master_i2s_2ch;
+    logic                      s_i2s_master_clk;
+    logic                      s_i2s_master_ws;
+    
+    logic                      s_slave_clk_en;
+    logic                      s_slave_i2s_en;
+    logic                      s_slave_i2s_2ch;
+    logic                      s_i2s_slave_clk;
+    logic                      s_i2s_slave_ws;
+    
+    logic                      s_pdm_clk_en;
+    logic                      s_slave_pdm_en;
+    logic                      s_pdm_clk;
+    logic                      s_i2s_pdm_clk;
+    
+    
 
     udma_i2s_reg_if #(
         .L2_AWIDTH_NOAL(L2_AWIDTH_NOAL),

@@ -60,6 +60,10 @@ module i2s_tx_channel (
     logic [2:0]  r_count_word;
 
     logic        s_word_done;
+    logic        s_word_done_pre;
+    
+    logic        s_i2s_ch0;
+    logic        s_i2s_ch1;
 
     logic        r_started;
 

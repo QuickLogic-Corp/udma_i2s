@@ -172,6 +172,9 @@ module udma_i2s_reg_if #(
 
     logic                      s_update_clk;
     logic                      r_update_clk;
+    logic                      cfg_update_clk_o;
+    
+    logic                      s_update;
 
     assign s_wr_addr = (cfg_valid_i & ~cfg_rwn_i) ? cfg_addr_i : 5'h0;
     assign s_rd_addr = (cfg_valid_i &  cfg_rwn_i) ? cfg_addr_i : 5'h0;
